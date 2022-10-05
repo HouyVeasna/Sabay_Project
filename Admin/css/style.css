@@ -1,0 +1,506 @@
+body{
+    margin: 0px;
+}
+h1,h2,h3,ul,div{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.bar1{
+    width: 100%;
+    height: 45px;
+    float: left;
+    background-color: rgb(43, 31, 31);
+    box-shadow: 1px 1px 4px #ccc;
+}
+.bar1 .box1{
+    width: 20%;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #ccc;
+}
+.bar1 .box1 .btn-menu{
+    width: 20%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    color: white;
+}
+.bar1 .box1 .btn-menu i{
+    font-size: 18px;
+}
+.bar1 .box1 .btn-menu:hover{
+    opacity: 0.7;
+}
+.bar1 .box1 .logo{
+    width: 80%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    cursor: pointer;
+}
+.bar1 .box1 .logo img{
+    height: 100%;
+    width: 95px;
+}
+.bar1 .box2{
+    width: 80%;
+    height: 100%;
+    float: left;
+}
+.bar1 .box2 .title-box{
+    width: 70%;
+    height: 100%;
+    float: left;
+    border-right: 1px solid #ccc;
+    line-height: 40px;
+    color: #ccc;
+    padding-left: 12px;
+    font-size: 18px;
+}
+.bar1 .box2 .user-box{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+.bar1 .box2 .user-box i{
+    color: #ccc;
+    margin-right: 5px;
+}
+.bar1 .box2 .user-box .user-name{
+    width: 85%;
+    height: 100%;
+    float: left;
+    line-height: 40px;
+    color: #ccc;
+    padding-left: 12px;
+    font-size: 18px;
+}
+.bar1 .box2 .user-box .btn-logout{
+    width: 15%;
+    height: 100%;
+    float: left;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+}
+.bar1 .box2 .user-box .btn-logout a{
+    color: #fff;
+}
+.bar1 .box2 .user-box .btn-logout:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* end top bar */
+
+
+/* left-menu */
+.left-menu{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    top:45px;
+    left: 0px;
+    background-color: #eee;
+    border-right: 1px solid #ccc;
+}
+.left-menu ul li{
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    float: left;
+    box-sizing: border-box;
+    font-size: 17px;
+}
+.left-menu ul li:hover{
+    background-color: whitesmoke;
+}
+.content-box{
+    width: 80%;
+    height: 100%;
+    position: fixed;
+    top: 45px;
+    left: 20%;
+    display: none;
+}
+.content-box .box-2{
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: scroll;
+}
+.content-box .bar2{
+    width: 100%;
+    float: left;
+    padding: 5px;
+    background-color: #eee;
+    transition: all 0.3s linear;
+    /* border-bottom: 1px solid #333;
+    box-shadow: 1px 1px 8px 333; */
+}
+.content-box .bar2 ul li{
+    float: left;
+    margin: 0 5px;
+}
+.content-box .bar2 ul li.page-number{
+    padding: 8px;
+    font-size: 19px;
+}
+/* search */
+.content-box .bar2 ul.search{
+    float: left;
+    margin-left: 250px;
+}
+.content-box .bar2 ul.search li{
+    margin: 0px;
+}
+.content-box .bar2 ul.search li input{
+    padding: 8.4px;
+    border: 1px solid #333;
+    outline: none;
+    width: 200px;
+}
+.content-box .bar2 ul.search li select{
+    padding: 8px;
+    border: 1px solid #333;
+    background-color: #fff;
+    color: black;
+    outline: none;
+    width: 100px;
+}
+/* end search */
+.content-box .bar2 .page{
+    float: right;
+}
+.btn{
+    padding: 8px 15px;
+    float: left;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.7;
+}
+.btn-1{
+    background-color: #333;
+    color: white;
+}
+.btn-2{
+    background-color: rgb(31, 132, 55);
+    color: white;
+}
+/* end left-menu */
+
+/* pop up */
+.frm{
+    width: 500px;
+    overflow: hidden;
+    border-radius: 3px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 3px 0px rgb(65, 57, 57);
+    position: absolute;
+    top:20px;
+    left: 50%;
+    transform: translate(-50%,0);
+}
+.frm .header{
+    width: 100%;
+    float: left;
+    height: 40px;
+    background-color: #eee;
+    line-height: 40px;
+    padding-left: 10px;
+    border-bottom: 1px solid #ccc;
+    position: relative;
+}
+.frm .header .btn-close{
+    text-align: center;
+    width: 40px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #333;
+    line-height: 40px;
+    color: white;
+}
+.frm .header .btn-close:hover{
+    background-color: crimson;
+    cursor: pointer;
+}
+.frm .body{
+    width: 100%;
+    padding: 10px;
+    float: left;
+    background-color: white;
+}
+label{
+    width: 100%;
+    float: left;
+}
+.frm-control {
+    width: 100%;
+    float: left;
+    border: 1px solid #333;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+.img-box{
+    width: 120px;
+    height: 120px;
+    float: left;
+    border: 1px solid #ccc;
+    background-image: url("bg-img/user1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+/* image-loading */
+.loading-img{
+    width: 200px;
+    height: 150px;
+    border-radius: 6px;
+    background-color: white;
+    background-image: url('bg-img/loading3.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 64px 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.img-box input{
+    width: 100%;
+    height: 100%;
+    float: left;
+    opacity: 0;
+    cursor: pointer;
+}
+.frm .footer{
+    width: 100%;
+    float: left;
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+    padding: 5px;
+}
+.frm .footer .btn-2{
+    float: right;
+    font-size: 18px;
+}
+.popup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(58, 51, 51, 0.5);
+}
+
+/* table custom */
+table{
+    width: 100%;
+    float: left;
+    border-collapse: collapse;
+    border: 1px solid #eee;
+}
+table thead tr th{
+    padding: 7px;
+    border: 1px solid #ccc;
+    /* background-color: rgb(40, 7, 163); */
+    background-color: #ff3838;
+    color: #fff;
+}
+table tbody tr td{
+    padding: 7px;
+    border: 1px solid #ccc;
+}
+table tbody tr td img{
+    width: 35px;
+    height: 35px;
+}
+table tbody tr:hover{
+    background-color: whitesmoke;
+}
+table tbody tr td img:hover{
+    cursor: pointer;
+}
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+table tbody tr td div.btn-edit i{
+    font-size: 16px;
+    color: rgb(42, 127, 255);
+    padding-left: 10px;
+}
+table tbody tr td div.btn-edit i:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+/* loading customize */
+.loading{
+    width: 200px;
+    height: 150px;
+    border-radius: 6px;
+    background-color: white;
+    background-image: url('bg-img/loading2.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 128px 128px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.menu-active{
+    width: 50px;
+    transition: 0.3s;
+
+}
+.content-active{
+    width: 100%;
+    transition: 0.3s;
+    position: absolute;
+    left: 0px;
+}
+
+
+/* btn-permission */
+table tbody tr td div{
+    width: 68%;
+    float: left;
+}
+table tbody tr td span{
+    width: 25%;
+    float: left;
+    margin-right: 4%;
+}
+table tbody tr td span#permiss,table tbody tr td span.hide {
+    display: none;
+}
+table tbody tr td i.status-uncheck{
+    color: rgb(255, 33, 33);
+}
+table tbody tr td i.status-check{
+    color: rgb(48, 196, 38);
+}
+.btn-permission{
+    float: right;
+    color: crimson;
+    cursor: pointer;
+}
+.btn-permission :hover{
+    opacity: 0.8;
+}
+
+.frm table#tblPermission{
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 13px;
+}
+.frm table#tblPermission td select{
+    width: 70%;
+    border: 1px solid #333;
+    outline: none;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    border-radius: 4px;
+}
+
+
+/* view image box */
+.popup-img{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(58, 51, 51, 0.5);
+}
+.view-img-box{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-55%);
+    width: 500px;
+    height: 500px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 5px 0px #333;   
+    background-color: white;
+}
+.view-img-box .header-img{
+    height: 45px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    float: left;
+    background-color: whitesmoke;
+}
+.view-img-box .header-img .header-img-left{
+    width: 90%;
+    float: left;
+    height: 100%;
+    line-height: 45px;
+    padding: 0px 10px;
+}
+.view-img-box .header-img .header-img-left i{
+    color: #333;
+    font-size: 22px;
+    margin-right: 5px;
+}
+.view-img-box .header-img .header-img-left span{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Century Gothic";
+}
+
+.view-img-box .header-img .header-img-right{
+    width: 10%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 50px;
+}
+.view-img-box .header-img .header-img-right .btn-close-img-box{
+    width: 100%;
+    height: 100%;
+    background-color: crimson;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+    transition: all 0.1s linear;
+}
+.view-img-box .header-img .header-img-right .btn-close-img-box:hover{
+    opacity: 0.8;
+}
+
+.view-img-box .body-img {
+    width: 100%;
+    height: 455px;
+    float: left;
+    position: relative;
+    background-color: white;
+}
+.view-img-box .body-img img{
+    width: 97%;
+    height: 97%;
+    padding: 3%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
